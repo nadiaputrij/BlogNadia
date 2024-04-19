@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Tambahkan ikon sosial media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Styles untuk latar belakang */
+        body {
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('Images/USA.jpg'); /* Ganti 'USA.jpg' dengan URL atau path ke foto yang Anda inginkan */
+            background-size: cover;
+            filter: blur(10px); /* Efek blur dengan radius 10px */
+            z-index: -1; /* Agar latar belakang berada di belakang konten */
+        }
+        /* CSS untuk jarak antara navbar dengan konten artikel */
+        .title-container {
+            margin-top: 50px; /* Menambahkan margin atas 50px pada .title-container */
+        }
+        /* CSS untuk mengubah font dan warna font pada judul artikel */
+        .title-container h1 {
+            font-family: 'Arial', sans-serif; /* Font Arial atau font sans-serif lainnya */
+            background: linear-gradient(to right, #f014c0, #31cab1); /* Gradasi dari warna pink (#f014c0) ke abu-abu gelap (#31cab1) */
+            -webkit-background-clip: text; /* Mengatur area teks sebagai mask untuk latar belakang gradasi (Safari) */
+            background-clip: text; /* Mengatur area teks sebagai mask untuk latar belakang gradasi (Chrome, Firefox, Edge) */
+            -webkit-text-fill-color: transparent; /* Menjadikan warna teks menjadi transparan */
+            color: transparent; /* Menjadikan teks menjadi transparan untuk browser yang tidak mendukung background-clip */
+        }
+        /* Styles for Search Container */
+        .search-container {
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .search-container input[type=text] {
+            padding: 10px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            background-color: #366cd7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #307ede;
+        }
+        /* Styles for Card Category */
+        .card-category {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 999;
+        }
+        .card-category .badge {
+            font-size: 12px;
+            padding: 6px 8px;
+        }
+        /* CSS untuk memposisikan judul artikel dan ikon-ikon di tengah */
+    .title-container {
+        text-align: center;
+        margin-bottom: 20px; /* Jarak bawah untuk ikon-ikon */
+    }
+
+    .social-icons {
+        text-align: center; /* Memposisikan ikon sosial media di tengah */
+        list-style: none;
+        padding: 0;
+    }
+
+    .social-icons li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Container untuk judul artikel dan ikon-ikon sosial media -->
+        <div class="title-container">
+            <!-- Judul Artikel -->
+            <h1>Nptrij Blog</h1>
+            <!-- Social Icons -->
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand navbar-light bg-light mb-4">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Search -->
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+        <div class="row">
+            <div class="card-deck">
+                <!-- Blog Post 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <!-- Blog Post Image -->
+                        <img class="card-img-top" src="Images/teknologi-digital-sebagai-salah-satu-kendaraan-menuju-kemajuan-bangsa-PusEWcDLE1.jpg" alt="Blog Post Image">
+                        <div class="card-category">
+                            <span class="badge badge-secondary">Technology</span>
+                        </div>
+                        <div class="card-body">
+                            <!-- Blog Post Title -->
+                            <h2 class="card-title">INTERNET OF THINGS (IOT)</h2>
+                            <!-- Blog Post Description -->
+                            <p class="card-text"> Internet of things is a concept where an object is embedded with technologies such as sensors and software in order to communicate, control, 
+                                connect, and exchange data through other devices as long as they are connected to the internet.</p>
+                            <!-- Read More Button -->
+                            <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <!-- Blog Post Image -->
+                        <img class="card-img-top" src="Images/bisnis.jpeg" alt="Blog Post Image">
+                        <div class="card-category">
+                            <span class="badge badge-secondary">Business</span>
+                        </div>
+                        <div class="card-body">
+                            <!-- Blog Post Title -->
+                            <h2 class="card-title">BUSINESS ETHICS IN DIGITAL AGE </h2>
+                            <!-- Blog Post Description -->
+                            <p class="card-text"> In the rapidly evolving digital age, business ethics has become an important cornerstone that not only determines a company's reputation, but also understands its broader impact on society and the environment.  </p>
+                            <!-- Read More Button -->
+                            <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+   <!-- Blog Post 3 -->
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <!-- Blog Post Image -->
+        <img class="card-img-top" src="Images/OIP.jpeg" alt="Blog Post Image">
+        <div class="card-category">
+            <span class="badge badge-secondary">Food</span>
+        </div>
+        <div class="card-body">
+            <!-- Blog Post Title -->
+            <h2 class="card-title"> CELEBRATING DIVERSE FLAVOURS </h2>
+            <!-- Blog Post Description -->
+            <p class="card-text"> Traditional food is a window into Indonesia's rich culture that can be savoured with every mouthful. One way to develop cultural insights through cuisine is to explore new flavours in traditional foods.  </p>
+            <!-- Read More Button -->
+            <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+        </div>
+    </div>
+</div>
+<!-- Blog Post 4 -->
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <!-- Blog Post Image -->
+        <img class="card-img-top" src="Images/eiffel-tower-paris-1.jpg" alt="Blog Post Image">
+        <div class="card-category">
+            <span class="badge badge-secondary">Travel</span>
+        </div>
+        <div class="card-body">
+            <!-- Blog Post Title -->
+            <h2 class="card-title"> ROMANTIC TRAIL IN PARIS </h2>
+            <!-- Blog Post Description -->
+            <p class="card-text"> What comes to mind when you think of Paris? The Eiffel Tower definitely comes first and the Louvre Museum follows close behind.
+                However, through the lens of German photographer Sebastian Erras, the beauty of Paris is revealed through the details of the shop facades that he managed to capture.  </p>
+            <!-- Read More Button -->
+            <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+        </div>
+    </div>
+</div>
+<!-- Blog Post 5 -->
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <!-- Blog Post Image -->
+        <img class="card-img-top" src="Images/Nora-71-Kopie.jpg" alt="Blog Post Image">
+        <div class="card-category">
+            <span class="badge badge-secondary">Healthy</span>
+        </div>
+        <div class="card-body">
+            <!-- Blog Post Title -->
+            <h2 class="card-title"> IMPORTANCE OF SELF-CARE </h2>
+            <!-- Blog Post Description -->
+            <p class="card-text"> Imagine a world where you're not constantly drained, where your needs aren't always at the bottom of the to-do list. 
+                Sounds refreshing, doesn't it? That's the power of self-care.  </p>
+            <!-- Read More Button -->
+            <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+        </div>
+    </div>
+</div>
+<!-- Blog Post 6 -->
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <!-- Blog Post Image -->
+        <img class="card-img-top" src="Images/img_e9d4dd4e2e4fc4c7ab0ddaffae598acd355034.jpg" alt="Blog Post Image">
+        <div class="card-category">
+            <span class="badge badge-secondary">Technology</span>
+        </div>
+        <div class="card-body">
+            <!-- Blog Post Title -->
+            <h2 class="card-title"> DIGITAL REVOLUTION </h2>
+            <!-- Blog Post Description -->
+            <p class="card-text"> The technological shift from mechanical and analogue electronic technology that began in the 1950s to the 1970s saw the adoption and development of digital 
+                recording technology and digital computers that continues to this day. </p>
+            <!-- Read More Button -->
+            <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+ <!-- Artikel Navigation -->
+ <div class="row">
+    <!-- Card Artikel Sebelumnya -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Artikel Sebelumnya</h5>
+                <a href="#" class="btn btn-primary"><i class="fas fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Card Artikel Selanjutnya -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Artikel Selanjutnya</h5>
+                <a href="#" class="btn btn-primary"><i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
